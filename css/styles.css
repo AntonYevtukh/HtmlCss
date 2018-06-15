@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 5px;
+    display: table-row;
+}
+
+.col-1 {width: 10%;}
+.col-2 {width: 20%;}
+.col-3 {width: 30%;}
+.col-4 {width: 40%;}
+.col-5 {width: 50%;}
+.col-6 {width: 60%;}
+.col-7 {width: 70%;}
+.col-8 {width: 80%;}
+.col-9 {width: 90%;}
+.col-10 {width: 100%;}
+
+#content {
+    background-image: url("../img/clouds.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+#title {
+    text-align: center;
+    border-bottom: 1px solid #777;
+}
+
+img, h1 {
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+h1 {
+    font-size: 20px;
+    margin: auto;
+}
+
+img {
+    margin: auto;
+}
+
+#status {
+    text-align: right;
+}
+
+input {
+    margin: auto 0;
+}
+
+aside > span {
+    display: block;
+}
+
+input[type="checkbox"] {
+    vertical-align: center;
+}
+
+input[type="submit"] {
+    background-color: forestgreen;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+.input-group {
+    display: flex;
+    margin: 0.25rem auto;
+}
+
+#login-section {
+    background-color: lightsteelblue;
+}
