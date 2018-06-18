@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo File Storage Application</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <img class="folder-icon" src="../img/folder32x32.png">
+            <h1>File Storage v0.01 Store your files reliably!</h1>
+            <img class="folder-icon" src="../img/folder32x32.png">
+        </div>
+        <div id="status">
+            <span>Yo are logged in as <strong>Anton Yevtukh</strong></span><span><a href="#">Exit</a></span>
+        </div>
+    </header>
+    <div id="content">
+        <aside class="col-2">
+            <span><b>You are able to upload:</b></span>
+            <span>.zip (up to 20 Mb)</span>
+            <span>.docx (up to 40 Mb)</span>
+            <span>.pptx (up to 50 Mb)</span>
+            <br>
+            <span><b>Space used:</b></span>
+            <span><b>25.43 Mb of 100 Mb</b></span>
+        </aside>
+        <section class="center-section col-6">
+            <table>
+                <thead>
+                    <tr class="col-10 p-0">
+                        <td class="col-3">File</td>
+                        <td class="col-2">Size (Kb)</td>
+                        <td class="col-3">Date / Time</td>
+                        <td class="col-2">Delete</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="col-10 p-0">
+                        <td class="col-3"><a href="#">Spring_tutorial.zip</a></td>
+                        <td class="col-2 text-center">10543.22</td>
+                        <td class="col-3 text-center"><time datetime="2018-06-14T08:23:11">14.06.2018 08:23:11</time></td>
+                        <td class="col-2 text-center"><a href="#" class="delete-link">Delete</a></td>
+                    </tr>
+                    <tr class="col-10 p-0">
+                        <td class="col-3"><a href="#">StreamApi.pptx</a></td>
+                        <td class="col-2 text-center">3453.22</td>
+                        <td class="col-3 text-center"><time datetime="2018-06-14T08:23:11">15.06.2018 16:17:31</time></td>
+                        <td class="col-2 text-center"><a href="#" class="delete-link">Delete</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <form action="#">
+                <div class="input-group-file">
+                    <label class="d-block" for="file-input">Upload a new File:</label>
+                    <div class="col-2">
+                        <button type="button"><span>Choose a File:</span><input id="file-input" type="file"></button>
+                    </div>
+                    <div class="col-8">
+                        <div>
+                            File not selected
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="col-2">
+                        <input id="upload" type="submit" value="Upload">
+                    </div>
+                </div>
+            </form>
+        </section>
+        <aside class="col-2">
+            <span><b>Statistics:</b></span>
+            <span>Users: 100</span>
+            <span>Files: 1000</span>
+            <span>Total size: 10 000 Mb</span>
+            <span>Space per User: 50 Mb</span>
+        </aside>
+    </div>
+    <footer>
+        Anton Yevtukh © 2018
+    </footer>
+    <script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>

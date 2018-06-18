@@ -1,5 +1,11 @@
 * {
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
 [class*="col-"] {
@@ -19,16 +25,31 @@
 .col-9 {width: 90%;}
 .col-10 {width: 100%;}
 
+header, footer {
+    background-color: dodgerblue;
+    color: white;
+    height: 10%;
+}
+
 #content {
     background-image: url("../img/clouds.png");
     background-position: center top;
     background-repeat: no-repeat;
     display: flex;
+    position: relative;
+    min-height: 80%;
 }
 
 #title {
     text-align: center;
     border-bottom: 1px solid #777;
+}
+
+#status > span {
+    padding-right: 5px;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: bottom;
 }
 
 img, h1 {
@@ -57,15 +78,25 @@ aside > span {
     display: block;
 }
 
-input[type="checkbox"] {
-    vertical-align: center;
+input[type="text"], input[type="password"] {
+    padding: 4px;
+    border-radius: 2px;
+    border: 1px solid #777;
 }
 
-input[type="submit"] {
+input[type="checkbox"] {
+    height: 16px;
+    width: 16px;
+}
+
+input[type="submit"], input[type="file"], button {
     background-color: forestgreen;
     color: white;
     border: none;
     border-radius: 2px;
+    padding: 4px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .input-group {
@@ -73,6 +104,124 @@ input[type="submit"] {
     margin: 0.25rem auto;
 }
 
-#login-section {
-    background-color: lightsteelblue;
+form {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #777;
 }
+
+aside {
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
+}
+
+.center-section {
+    background-color: #e8e8e8;
+    border: 1px solid #777;
+}
+
+footer {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.p-0 {
+    padding: 0 !important;
+}
+
+table, thead, tbody {
+    width: 100%;
+}
+
+thead td {
+    text-align: center;
+}
+
+thead td::after, tr:not(:last-child) > td::after {
+    content: '';
+    display: block;
+    height: 0;
+    border-bottom: 1px solid #777;
+}
+
+.delete-link {
+    color: firebrick;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.input-group-file {
+    position: relative;
+    overflow: hidden;
+    border: none;
+}
+
+.input-group-file > label {
+    padding: 4px;
+}
+
+.input-group-file button {
+    height: auto;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px;
+}
+
+div.col-2 > input {
+    padding: 3px 0px;
+    width: 100%;
+}
+
+.input-group-file button > span {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+}
+
+.input-group-file > div > div {
+    display: inline-block;
+    margin: 0px 5px;
+    border: 1px solid #777;
+    width: 100%;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+.input-group-file input[type=file]{
+    position: relative;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(-100%);
+    cursor: pointer
+}
+
+.input-group-file.focus {
+    box-shadow: 0 0 5px rgba(0,30,255,0.4)
+}
+.input-group-file button{
+    background: dodgerblue;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.input-group-file button:hover, .input-group-file button:active {
+    cursor: pointer;
+}
+
+
+
+
+
