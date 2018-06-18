@@ -10,12 +10,14 @@
 <body>
     <header>
         <div id="title">
-            <img class="folder-icon" src="../img/folder32x32.png">
-            <h1>File Storage v0.01 Store your files reliably!</h1>
-            <img class="folder-icon" src="../img/folder32x32.png">
+            <div>
+                <img class="folder-icon" src="../img/folder32x32.png">
+                <h1>File Storage v0.01 Store your files reliably!</h1>
+                <img class="folder-icon" src="../img/folder32x32.png">
+            </div>
         </div>
         <div id="status">
-            <span>Yo are logged in as <strong>Anton Yevtukh</strong></span><span><a href="#">Exit</a></span>
+            <span>You are logged in as <strong>Anton Yevtukh</strong></span><span><a href="#">Exit</a></span>
         </div>
     </header>
     <div id="content">
@@ -57,7 +59,10 @@
                 <div class="input-group-file">
                     <label class="d-block" for="file-input">Upload a new File:</label>
                     <div class="col-2">
-                        <button type="button"><span>Choose a File:</span><input id="file-input" type="file"></button>
+                        <button type="button">
+                            <span>Choose a File:</span>
+                            <input id="file-input" type="file">
+                        </button>
                     </div>
                     <div class="col-8">
                         <div>
@@ -69,6 +74,21 @@
                     <div class="col-2">
                         <input id="upload" type="submit" value="Upload">
                     </div>
+                </div>
+            </form>
+            <form action="#">
+                <div class="input-group">
+                    <label class="d-block" for="remote-server-input">Request from remote server:</label>
+                </div>
+                <div class="input-group">
+                    <input class="d-block col-10" id="remote-server-input" type="text">
+                </div>
+                <div class="input-group">
+                    <label for="store-input" class="col-2 p-0">Put to Storage</label>
+                    <input id="store-input" type="checkbox">
+                </div>
+                <div class="input-group">
+                    <input id="sign-in" class="col-2" type="submit" value="Request">
                 </div>
             </form>
         </section>
